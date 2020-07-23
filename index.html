@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body  style="overflow-y:hidden" >
+  <header>
+    <figure>
+      <img src="logo-adaptativamente.png" alt="" class="logo">
+    </figure>
+  </header>
+  <h1>Ingresa tus datos</h1>
+  <form class="container-form">
+    <div class="items">
+    <label for="name" class="labelName" >Nombre</label>
+    <input type="text" name="name" id="name" class="input" placeholder="Escribe tu nombre" required >
+  </div>
+  <div class="items">
+    <label for="" class="label">Apellido</label>
+    <input type="text" name="lastName" required="required" id="lastName" class="input" placeholder="Escribe tu apellido" required >
+  </div>
+  <div class="items">
+    <label for="email" class="labelEmail">Email</label>
+    <input type="email" name="email"   id="email" class="input" placeholder="Escribe tu email" required>
+  </div>
+  <div class="items">
+    <label for="" class="label">Teléfono</label>
+    <input type="number" name="numberPhone" id="phone" required="required" class="input" placeholder="Escribe tu teléfono" required >
+  </div>
+  <div class="items">
+    <label for="" class="labelDescription">Descripción</label>
+    <input type="text" name="description" id="description" required="required" class="input" placeholder="Escribe tu descripción" required >
+  </div>
+  </form>  
+  <a href="#openModal" type="submit" class="button" id="button" onclick="condition()">Agregar</a>
+  <aside id="openModal" class="modal">
+    <div class="content-modal">
+      <header>
+      <a href="#" class="close-modal">X</a>
+      <h2>buen trabajo</h2>
+      </header>
+      <article>
+        <div id="showName"></div>
+      </article>
+    </div>
+    <a href="#" class="btn-clouse-modal"></a>    
+  </aside>
+
+  <script src="index.js"></script>
+</body>
+</html>
